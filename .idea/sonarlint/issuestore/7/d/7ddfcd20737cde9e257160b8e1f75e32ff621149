@@ -1,0 +1,12 @@
+
+ž
+java:S1598"ûThis file "CompletefieldTasks.java" should be located in "co\com\sofka\tasks" directory, not in "C:\Users\german.valencia\Downloads\AutomatizacionSrScrnDiesel (2)\AutomatizacionTMO\src\main\java\co.com.sofka\tasks"(Do not use dots in directory names).(º††åøÿÿÿÿ8ò·¸·Ó1
+h
+java:S1128
+"FRemove this unused import 'net.serenitybdd.screenplay.actions.Scroll'.(ÆðŒÄþÿÿÿÿ8ü·¸·Ó1
+d
+java:S1128"GRemove this unused import 'net.serenitybdd.screenplay.waits.WaitUntil'.(˜• Ü8ü·¸·Ó1
+Q
+java:S1128"/Remove this unused import 'java.time.Duration'.(ëá¯‰üÿÿÿÿ8ü·¸·Ó1
+€
+java:S1128"dRemove this unused import 'net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isClickable'.(ûó—r8ü·¸·Ó1

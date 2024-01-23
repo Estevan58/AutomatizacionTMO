@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.11.3/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.11.3/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.11.3/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Automation Project</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="0eb41d771dd6e734d41aaeae5d9047826ad603ee529fbb8ee0489df4368a8735.html">Funcionalidades De La P&aacute;gina TMO</a></span>
+                > <span class="truncate-60"><a
+                    href="d8e0161d242405861a83cd24bbfd46ccd57c14954410e91de7e040c64869572f.html">Acceder a la p&aacute;gina TMO </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="bi bi-chat-text"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 23-01-2024 10:47</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Funcionalidades De La Página TMO </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="a73833ef49b21505b20db8f80c3bd0ada01cb18ae5cd3383469e2abcba37aa9f.html">Acceder
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Acceder a la p&aacute;gina TMO
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="5618aefb283adf13f502cecbafe4e77b054487b7cf05e9ce8933775db473a364.png" title=" Given El usuario abre la p&aacute;gina TMO" width="1318"/>
+                <img src="5618aefb283adf13f502cecbafe4e77b054487b7cf05e9ce8933775db473a364.png" title=" Tmo open tmo tasks" width="1318"/>
+                <img src="5618aefb283adf13f502cecbafe4e77b054487b7cf05e9ce8933775db473a364.png" title=" TMO opens the Toregister ui" width="1318"/>
+                <img src="5618aefb283adf13f502cecbafe4e77b054487b7cf05e9ce8933775db473a364.png" title=" Tmo open tmo tasks (completed)" width="1318"/>
+                <img src="5618aefb283adf13f502cecbafe4e77b054487b7cf05e9ce8933775db473a364.png" title=" Given El usuario abre la p&aacute;gina TMO (completed)" width="1318"/>
+                <img src="72989553c3ce6e2bdda984915077ecca04d22f97f4ca59e6daf5076aa5a3b125.png" title=" When El usuario hace clic en el boton para iniciar sesion" width="1318"/>
+                <img src="72989553c3ce6e2bdda984915077ecca04d22f97f4ca59e6daf5076aa5a3b125.png" title=" Buscar clic acceder" width="1318"/>
+                <img src="72989553c3ce6e2bdda984915077ecca04d22f97f4ca59e6daf5076aa5a3b125.png" title=" Buscar clicks on Acceder" width="1318"/>
+                <img src="50103ea8c9c8c19c0bef5e501c7bdf75f967f56ecd9f15a9d98ddf382eb344ba.png" title=" Buscar clicks on Acceder (completed)" width="1318"/>
+                <img src="50103ea8c9c8c19c0bef5e501c7bdf75f967f56ecd9f15a9d98ddf382eb344ba.png" title=" Buscar clic acceder (completed)" width="1318"/>
+                <img src="50103ea8c9c8c19c0bef5e501c7bdf75f967f56ecd9f15a9d98ddf382eb344ba.png" title=" When El usuario hace clic en el boton para iniciar sesion (completed)" width="1318"/>
+                <img src="41c55188446323a44d189ca715db344b49da0ccea480e4a301b7b62c1c5c2856.png" title=" And Ingresa las credenciales de usuario" width="1318"/>
+                <img src="41c55188446323a44d189ca715db344b49da0ccea480e4a301b7b62c1c5c2856.png" title=" Buscar writecredentials tasks" width="1318"/>
+                <img src="41c55188446323a44d189ca715db344b49da0ccea480e4a301b7b62c1c5c2856.png" title=" Buscar enters 'germanestevan58@gmail.com' into Email" width="1318"/>
+                <img src="6bffa53dc28e77ceb7fbc6a8dea81d876aa9670a64a030eb95178a771c92f21d.png" title=" Buscar enters 'germanestevan58@gmail.com' into Email (completed)" width="1318"/>
+                <img src="6bffa53dc28e77ceb7fbc6a8dea81d876aa9670a64a030eb95178a771c92f21d.png" title=" Buscar enters 'Gv12345' into password" width="1318"/>
+                <img src="168756a83de3a5da36bc3a783ac7161ab4c21c14d8d54f017031161706e550a2.png" title=" Buscar enters 'Gv12345' into password (completed)" width="1318"/>
+                <img src="168756a83de3a5da36bc3a783ac7161ab4c21c14d8d54f017031161706e550a2.png" title=" Buscar writecredentials tasks (completed)" width="1318"/>
+                <img src="168756a83de3a5da36bc3a783ac7161ab4c21c14d8d54f017031161706e550a2.png" title=" And Ingresa las credenciales de usuario (completed)" width="1318"/>
+                <img src="3e8b043b8c7c9f839661a852fa8fa00674861fa831c89b376d25cd18029c17e1.png" title=" And Hace clic en el boton para acceder" width="1318"/>
+                <img src="3e8b043b8c7c9f839661a852fa8fa00674861fa831c89b376d25cd18029c17e1.png" title=" Acceder clicks on Iniciar sesion" width="1318"/>
+                <img src="3e8b043b8c7c9f839661a852fa8fa00674861fa831c89b376d25cd18029c17e1.png" title=" And Hace clic en el boton para acceder (completed)" width="1318"/>
+                <img src="3e8b043b8c7c9f839661a852fa8fa00674861fa831c89b376d25cd18029c17e1.png" title=" Then El usuario deber&iacute;a ser redirigido a la pagina principal: <span class='success-color'>SUCCESS</span>" width="1318"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.3.0</span>
+</div>
+</body>
+</html>

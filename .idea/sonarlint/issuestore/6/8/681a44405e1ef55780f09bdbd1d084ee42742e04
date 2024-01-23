@@ -1,0 +1,9 @@
+
+
+java:S1598"υThis file "LookforTasks.java" should be located in "co\com\sofka\tasks" directory, not in "C:\Users\german.valencia\Downloads\AutomatizacionSrScrnDiesel (2)\AutomatizacionTMO\src\main\java\co.com.sofka\tasks"(Do not use dots in directory names).(Ί††εψÿÿÿÿ8ε•Π΄Σ1
+g
+java:S1128"JRemove this unused import 'net.serenitybdd.screenplay.actions.EnterValue'.(η•Ψ²8χ•Π΄Σ1
+e
+java:S1128"CRemove this unused import 'net.serenitybdd.screenplay.actions.Hit'.(Πώ²ξωÿÿÿÿ8χ•Π΄Σ1
+R
+java:S1128	"5Remove this unused import 'org.openqa.selenium.Keys'.(§Υ8χ•Π΄Σ1
